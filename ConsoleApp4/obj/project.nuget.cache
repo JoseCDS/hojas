@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "RTCIRqFa5bRpHMB4pUI5J2fW4aNL8Tx4qVLZqSpsJu2lwPvH5dASnPybbf6RvVdNHUhqvHps+nmr5jAS1Wpb9w==",
+  "dgSpecHash": "y+O44yOM4RlCfntdXhAYMIOZUIz7LXOHjxwWDAbAq0XeCmh6gEeQh4FcaERXFYU5rsJsaknVzLJCByRHu3Tk+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\jtarrillo\\source\\repos\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jtarrillo\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\jtarrillo\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\jtarrillo\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\jtarrillo\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\jtarrillo\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

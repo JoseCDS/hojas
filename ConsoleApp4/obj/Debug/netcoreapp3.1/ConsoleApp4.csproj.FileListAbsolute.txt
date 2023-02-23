@@ -11,3 +11,13 @@ C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\
 C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.dll
 C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.pdb
 C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.genruntimeconfig.cache
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.AssemblyReference.cache
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\jtarrillo\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.CopyComplete

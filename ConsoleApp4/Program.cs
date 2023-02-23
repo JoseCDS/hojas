@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
+using System.Linq;
 
 namespace ConsoleApp4
 {
     class Program
     {
         static StreamReader Lectura;
+        static TextReader Leer;
         static StreamWriter escritura, temporal;
         static string cadena, respuesta;
         static string hoja, texto;
@@ -31,17 +35,19 @@ namespace ConsoleApp4
                     Console.WriteLine("1. Creando Número de Hojas");
                     Console.WriteLine("2. Consultas");
                     Console.WriteLine("3. Modificaciones");
+                    Console.WriteLine("4. Leyendo archivo");
                     Console.WriteLine("5. Salir");
                     Console.WriteLine("Que deseas hacer?...");
                     opcion = Convert.ToByte(Console.ReadLine());
                     switch (opcion)
                     {
                         case 1:
+
                             crearArchivos();
                             NumeroDeHojas();
 
                             break;
-                   
+
                         case 2:
                             consultas();
                             break;
@@ -49,6 +55,7 @@ namespace ConsoleApp4
                             modificaciones();
                             break;
                         case 4:
+                            leerArchivo();
                             break;
                         case 5:
                             Console.WriteLine("*********************************");
@@ -79,7 +86,49 @@ namespace ConsoleApp4
 
             } while (opcion != 6);
         }
+
         //Creando el método altas
+
+        [Obsolete]
+        static void leerArchivo()
+        {
+
+            //Leer = new StreamReader("C:/Users/jtarrillo/source/repos/ConsoleApp4/ConsoleApp4/VM_sco03_19.wri");
+
+            //Leer.Close();
+
+            string strContains = "HOJA:  1208";
+            string strFolderScan = "C:/Users/jtarrillo/Downloads/chanfletoide";
+            string strExtension = ".wri";
+
+            DirectoryInfo dir = new DirectoryInfo(strFolderScan);
+            IEnumerable<FileInfo> fileList = dir.GetFiles("*.*", SearchOption.AllDirectories);
+
+            IEnumerable<FileInfo> fileQuery =
+            from file in fileList
+            where file.Extension == strExtension//".wri"
+            orderby file.Name
+            select file;
+
+            Console.WriteLine("INI::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            foreach (FileInfo fi in fileQuery)
+            {
+                int counter = 0;
+                string[] lines = File.ReadAllLines(fi.FullName);
+
+                Console.WriteLine("LOCATION " + fi.FullName);
+
+                foreach (string line in lines)
+                {
+                    counter++;
+                    if (line.Contains(strContains))//Hoja
+                        Console.WriteLine("\t" + "LINE " + counter + " :: " + line);
+                }
+            }
+            Console.WriteLine("FIN::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            Console.ReadKey();
+        } 
+
         static void crearArchivos()
         {
             
